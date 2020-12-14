@@ -55,10 +55,10 @@ Challenge</string>
             </objects>
             <point key="canvasLocation" x="738" y="88"/>
         </scene>
-        <!--View Controller-->
+        <!--Days Options View Controller-->
         <scene sceneID="ldQ-er-Jee">
             <objects>
-                <viewController id="5DV-y6-54C" sceneMemberID="viewController">
+                <viewController id="5DV-y6-54C" userLabel="Days Options View Controller" customClass="DaysOptionsViewController" customModule="_0_Days_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AXC-Kl-FaQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,10 +142,10 @@ Challenge</string>
             </objects>
             <point key="canvasLocation" x="1437.68115942029" y="87.723214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Type Challenge View Controller-->
         <scene sceneID="vKM-1e-EP1">
             <objects>
-                <viewController id="9Oe-ZJ-1gQ" sceneMemberID="viewController">
+                <viewController id="9Oe-ZJ-1gQ" userLabel="Type Challenge View Controller" customClass="TypeChallengeViewController" customModule="_0_Days_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UsH-fx-dT3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,14 +170,15 @@ Challenge</string>
                                     <constraint firstAttribute="height" constant="35" id="Q6W-Hp-0jg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHv-IN-6fu">
                                 <rect key="frame" x="181.5" y="578.5" width="51" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="Xu4-3L-Lr2" kind="show" id="Heh-aa-uiy"/>
+                                    <action selector="nextButtonPressed:" destination="9Oe-ZJ-1gQ" eventType="touchUpInside" id="1Fj-Vm-EAn"/>
+                                    <segue destination="Xu4-3L-Lr2" kind="show" identifier="toConfirmationViewController" id="Tly-YI-hFG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -195,15 +196,19 @@ Challenge</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UYx-90-RpC"/>
+                    <connections>
+                        <outlet property="challengeTextField" destination="P2d-Iw-jrQ" id="Sly-Fr-tXT"/>
+                        <outlet property="nextButton" destination="nHv-IN-6fu" id="CTj-VY-SDn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fum-aD-f3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2137.68115942029" y="87.723214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirmation View Controller-->
         <scene sceneID="gx5-RS-4v0">
             <objects>
-                <viewController id="Xu4-3L-Lr2" sceneMemberID="viewController">
+                <viewController id="Xu4-3L-Lr2" userLabel="Confirmation View Controller" customClass="ConfirmationViewController" customModule="_0_Days_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EpR-YH-7PH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,6 +254,9 @@ Challenge</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1Jc-hR-xnC"/>
+                    <connections>
+                        <outlet property="confirmationLabel" destination="mCD-5h-qnd" id="2oF-S4-wup"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Jf-ol-Ika" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

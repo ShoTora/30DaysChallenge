@@ -16,6 +16,9 @@
 		B7E38AC0257F9D0300ECF13C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E38ABE257F9D0300ECF13C /* LaunchScreen.storyboard */; };
 		B7E38ACB257F9D0500ECF13C /* _0_Days_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E38ACA257F9D0500ECF13C /* _0_Days_ChallengeTests.swift */; };
 		B7E38AD6257F9D0500ECF13C /* _0_Days_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E38AD5257F9D0500ECF13C /* _0_Days_ChallengeUITests.swift */; };
+		B7F7234A258602190036A3AA /* DaysOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F72349258602190036A3AA /* DaysOptionsViewController.swift */; };
+		B7F7234F258602690036A3AA /* TypeChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F7234E258602690036A3AA /* TypeChallengeViewController.swift */; };
+		B7F72354258602A30036A3AA /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F72353258602A20036A3AA /* ConfirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		B7E38AD1257F9D0500ECF13C /* 30 Days ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "30 Days ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E38AD5257F9D0500ECF13C /* _0_Days_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0_Days_ChallengeUITests.swift; sourceTree = "<group>"; };
 		B7E38AD7257F9D0500ECF13C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F72349258602190036A3AA /* DaysOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysOptionsViewController.swift; sourceTree = "<group>"; };
+		B7F7234E258602690036A3AA /* TypeChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeChallengeViewController.swift; sourceTree = "<group>"; };
+		B7F72353258602A20036A3AA /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				B7E38AB0257F9CF800ECF13C /* AppDelegate.swift */,
 				B7E38AB2257F9CF800ECF13C /* SceneDelegate.swift */,
 				B7E38AB4257F9CF800ECF13C /* ViewController.swift */,
+				B7F72349258602190036A3AA /* DaysOptionsViewController.swift */,
+				B7F7234E258602690036A3AA /* TypeChallengeViewController.swift */,
+				B7F72353258602A20036A3AA /* ConfirmationViewController.swift */,
 				B7E38AB6257F9CF800ECF13C /* Main.storyboard */,
 				B7E38ABC257F9D0300ECF13C /* Assets.xcassets */,
 				B7E38ABE257F9D0300ECF13C /* LaunchScreen.storyboard */,
@@ -261,10 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F72354258602A30036A3AA /* ConfirmationViewController.swift in Sources */,
 				B7E38AB5257F9CF800ECF13C /* ViewController.swift in Sources */,
 				B7E38AB1257F9CF800ECF13C /* AppDelegate.swift in Sources */,
+				B7F7234F258602690036A3AA /* TypeChallengeViewController.swift in Sources */,
 				B7E38AB3257F9CF800ECF13C /* SceneDelegate.swift in Sources */,
 				B7E38ABB257F9CF800ECF13C /* _0_Days_Challenge.xcdatamodeld in Sources */,
+				B7F7234A258602190036A3AA /* DaysOptionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
