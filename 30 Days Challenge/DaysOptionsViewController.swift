@@ -21,9 +21,14 @@ class DaysOptionsViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         sevenDaysButton.backgroundColor = .green
+        sevenDaysButton.layer.cornerRadius = 10
         fourteenDaysButton.backgroundColor = .blue
+        fourteenDaysButton.layer.cornerRadius = 10
         twentyoneDaysButton.backgroundColor = .purple
+        twentyoneDaysButton.layer.cornerRadius = 10
         thirtyDaysButton.backgroundColor = .orange
+        thirtyDaysButton.layer.cornerRadius = 10
+
     }
     
     @IBAction func sevenDaysButtonPressed(_ sender: Any) {
@@ -38,22 +43,22 @@ class DaysOptionsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toTCfromSeven" {
             let tcVC = segue.destination as! TypeChallengeViewController
-            tcVC.toConVC = "7 Days Challenge"
+            tcVC.toConVC = "7 Days \n Challenge"
             tcVC.toConVCColor = .green
         }
         if segue.identifier == "toTCfromFourteen" {
             let tcVC = segue.destination as! TypeChallengeViewController
-            tcVC.toConVC = "14 Days Challenge"
+            tcVC.toConVC = "14 Days \n Challenge"
             tcVC.toConVCColor = .blue
         }
         if segue.identifier == "toTCfromTwentyone" {
             let tcVC = segue.destination as! TypeChallengeViewController
-            tcVC.toConVC = "21 Days Challenge"
+            tcVC.toConVC = "21 Days \n Challenge"
             tcVC.toConVCColor = .purple
         }
         if segue.identifier == "toTCfromThirty" {
             let tcVC = segue.destination as! TypeChallengeViewController
-            tcVC.toConVC = "30 Days Challenge"
+            tcVC.toConVC = "30 Days \n Challenge"
             tcVC.toConVCColor = .orange
         }
     }

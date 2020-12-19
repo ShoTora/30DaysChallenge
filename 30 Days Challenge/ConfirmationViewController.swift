@@ -25,6 +25,8 @@ class ConfirmationViewController: UIViewController {
         confirmationLabel.text = conText
         daysConfirmationLabel.text = daysConLabel
         daysConfirmationLabel.backgroundColor = dclColor
+        daysConfirmationLabel.layer.cornerRadius = 70
+        daysConfirmationLabel.layer.masksToBounds = true
     }
     
 
