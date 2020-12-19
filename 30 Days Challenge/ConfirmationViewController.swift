@@ -10,8 +10,12 @@ import UIKit
 class ConfirmationViewController: UIViewController {
 
     @IBOutlet weak var confirmationLabel: UILabel!
+    @IBOutlet weak var daysConfirmationLabel: UILabel!
     
     var conText: String = ""
+    var daysConLabel: String = ""
+    var dclColor: UIColor = .red
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +23,8 @@ class ConfirmationViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         confirmationLabel.text = conText
+        daysConfirmationLabel.text = daysConLabel
+        daysConfirmationLabel.backgroundColor = dclColor
     }
     
 

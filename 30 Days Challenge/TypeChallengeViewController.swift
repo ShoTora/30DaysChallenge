@@ -13,6 +13,8 @@ class TypeChallengeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var challengeTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     
+    var toConVC: String = ""
+    var toConVCColor: UIColor = .red
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +56,8 @@ class TypeChallengeViewController: UIViewController, UITextFieldDelegate {
         if segue.identifier == "toConfirmationViewController" {
             let conVC = segue.destination as! ConfirmationViewController
             conVC.conText = self.challengeTextField.text!
+            conVC.daysConLabel = toConVC
+            conVC.dclColor = toConVCColor
             
         }
     }
